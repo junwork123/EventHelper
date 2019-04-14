@@ -4,6 +4,7 @@ class Event(object):
     opt_Cherry = []
     opt_URL = []
     opt_Keywords = []
+    limit = 70
 
     def setStartTime(self, value):
         self.startTime = value
