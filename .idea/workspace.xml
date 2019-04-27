@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63ad5b05-0069-4011-a7e0-b4ed62d6b91f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/excel/result.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/excelGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/excelGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excel/src.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainWindow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+              <folding>
+                <element signature="e#218#253#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/excelGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="119" column="64" lean-forward="true" selection-start-line="119" selection-start-column="64" selection-end-line="119" selection-end-column="64" />
+            <state relative-caret-position="2642">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -28,22 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainWindow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-              <folding>
-                <element signature="e#193#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Event.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="575">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -54,6 +56,8 @@
     <findStrings>
       <find>row_data</find>
       <find>raffle</find>
+      <find>spinBox</find>
+      <find>load_workbook</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -72,8 +76,8 @@
         <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/myLib.py" />
         <option value="$PROJECT_DIR$/Variable.py" />
-        <option value="$PROJECT_DIR$/mainWindow.py" />
         <option value="$PROJECT_DIR$/Event.py" />
+        <option value="$PROJECT_DIR$/mainWindow.py" />
         <option value="$PROJECT_DIR$/excelGenerator.py" />
       </list>
     </option>
@@ -95,16 +99,6 @@
               <item name="EventHelper" type="b2602c69:ProjectViewProjectNode" />
               <item name="EventHelper" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EventHelper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventHelper" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventHelper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventHelper" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -119,14 +113,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\EventHelper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="P:\Github\EventHelper\excel" />
       <recent name="P:\Github\EventHelper" />
       <recent name="P:\Github\EventHelper\venv" />
       <recent name="P:\EventHelper" />
       <recent name="P:\EventHelper\venv\Scripts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="P:\EventHelper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555182608049</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. '추첨페이지' 시트 생성&#10;    list_sheet에서 이름을 추출하여 당첨자를 선발하는 시트 생성&#10;   &#10;#TO-DO&#10;1. Event 클래스에 당첨자 인원제한, 이벤트 상품, 상품당 인원제한 추가&#10;2. UI 수정&#10;    가) 당첨조건 키워드 TextEdit 칸 추가&#10;    나) 당첨인원, 당첨상품, 상품당 당첨인원 TextEdit 칸 추가">
+      <created>1555246231962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555246231962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -203,12 +205,12 @@
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08440171" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14209402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49786323" visible="true" weight="0.28258488" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49786323" visible="true" weight="0.28368017" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -222,10 +224,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.170706" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49786323" visible="true" weight="0.28199565" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3253012" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50213677" side_tool="true" weight="0.28039432" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3274918" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="11" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. UI 추가(mainWindow.py)&#10;    이벤트 시작 및 종료날짜, 이벤트 당첨조건을 설정할 수 있다.&#10;    &#10;2. Class 'Event' 추가&#10;    UI에서 사용자가 설정한 조건들을 저장하는 클래스&#10;&#10;3. 메인 프로그램 변경&#10;   UI가 새로 생김에 따라 메인 프로그램을 mainWindow.py로 변경  &#10;   그에 따라 기존 메인 프로그램 main.py -&gt; excelGenerator.py로 이름 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. UI 추가(mainWindow.py)&#10;    이벤트 시작 및 종료날짜, 이벤트 당첨조건을 설정할 수 있다.&#10;    &#10;2. Class 'Event' 추가&#10;    UI에서 사용자가 설정한 조건들을 저장하는 클래스&#10;&#10;3. 메인 프로그램 변경&#10;   UI가 새로 생김에 따라 메인 프로그램을 mainWindow.py로 변경  &#10;   그에 따라 기존 메인 프로그램 main.py -&gt; excelGenerator.py로 이름 변경" />
+    <MESSAGE value="1. '추첨페이지' 시트 생성&#10;    list_sheet에서 이름을 추출하여 당첨자를 선발하는 시트 생성&#10;   &#10;#TO-DO&#10;1. Event 클래스에 당첨자 인원제한, 이벤트 상품, 상품당 인원제한 추가&#10;2. UI 수정&#10;    가) 당첨조건 키워드 TextEdit 칸 추가&#10;    나) 당첨인원, 당첨상품, 상품당 당첨인원 TextEdit 칸 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. '추첨페이지' 시트 생성&#10;    list_sheet에서 이름을 추출하여 당첨자를 선발하는 시트 생성&#10;   &#10;#TO-DO&#10;1. Event 클래스에 당첨자 인원제한, 이벤트 상품, 상품당 인원제한 추가&#10;2. UI 수정&#10;    가) 당첨조건 키워드 TextEdit 칸 추가&#10;    나) 당첨인원, 당첨상품, 상품당 당첨인원 TextEdit 칸 추가" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Scripts/pip-script.py" />
@@ -244,27 +267,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainWindow.py">
+    <entry file="file://$PROJECT_DIR$/ui/mainWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-          <folding>
-            <element signature="e#193#235#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="236">
+          <caret line="62" column="61" lean-forward="true" selection-end-line="185" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="575">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+          <folding>
+            <element signature="e#218#253#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/excelGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="119" column="64" lean-forward="true" selection-start-line="119" selection-start-column="64" selection-end-line="119" selection-end-column="64" />
+        <state relative-caret-position="2642">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

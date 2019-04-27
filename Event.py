@@ -4,7 +4,7 @@ class Event(object):
     opt_Cherry = []
     opt_URL = []
     opt_Keywords = []
-    limit = 70
+    prize = {}
 
     def setStartTime(self, value):
         self.startTime = value
@@ -30,3 +30,8 @@ class Event(object):
         self.opt_Keywords.extend(value)
     def getOpt_Keywords(self):
         return self.opt_Keywords
+
+    def setPrize(self, temp_dic):
+        self.prize.update(temp_dic)
+    def getPrize(self):
+        return self.prize
